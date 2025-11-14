@@ -385,13 +385,20 @@
             }
         }
 
+        /* Desktop image proportions - maintain aspect ratio */
+        @media (max-width: 767px) {
+            .carousel-wrapper {
+                flex: 0 0 auto;
+                height: auto;
+                aspect-ratio: auto;
+            }
+
         /* Desktop layout - two columns */
         @media (min-width: 768px) {
             .carousel-container {
                 width: 100%;
                 margin-left: auto;
                 max-width: 800px;
-                aspect-ratio: auto;
             }
         }
 
@@ -1062,6 +1069,7 @@
     </script>
 </body>
 </html>
+
 
 
 
